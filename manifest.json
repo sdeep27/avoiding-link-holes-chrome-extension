@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "Mindful Surfing: Avoiding Link Holes",
+	"description": "Boost productivity with a simple check to make sure you really do want to read that article. Studies show that it will take 30 minutes to focus back on your work after clicking one distracting link",
+	"version": "1.0",
+	"content_scripts": [{
+		"matches": ["http://www.reddit.com/*", "https://www.reddit.com/*", "https://en.wikipedia.org/*", 
+		"http://en.wikipedia.org/*","https://m.reddit.com/*","https://www.buzzfeed.com/*",
+		"https://www.wikipedia.org/*", "http://www.buzzfeed.com/*", "https://news.google.com/*"],
+		"js": ["main.js"],
+		"css": ["index.css"]
+	}]
+}
